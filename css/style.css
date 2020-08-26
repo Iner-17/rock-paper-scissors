@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-rows: 1fr 600px 1fr;
+    grid-template-areas:
+        ". h1 ."
+        ". field ."
+        ". . .";
+
+    background: #333;
+    height: 100vh;
+}
+
+.container h1 {
+    grid-area: h1;
+
+    text-align: center;
+    font-size: 40px;
+    color: rgb(18, 170, 241);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.container .player-field {
+    grid-area: field;
+
+    background: #f4f4f4;
+    height: 600px;
+    width: 1200px;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.profile h2 {
+    position: absolute;
+    top: -20px;
+    font-size: 40px;
+}
+
+/* Player style */
+.container .player-profile {
+    height: 200px;
+    width: 200px;
+    background: #333;
+}
+
+.player-name {
+    position: absolute;
+    top: -50px;
+    left: 200px;
+    height: 35px;
+    width: 200px;
+    background: #333;
+}
+
+.player-guess {
+    position: absolute;
+    top: 50px;
+    height: 45px;
+    left: 630px;
+    width: 150px;
+    background: #333;
+}
+
+/* bot style */
+.container .bot-profile {
+    height: 200px;
+    width: 200px;
+    background: #333;
+}
+
+.bot-name {
+    position: absolute;
+    top: -50px;
+    left: 800px;
+    height: 35px;
+    width: 200px;
+    background: #333;
+}
+
+.bot-guess {
+    position: absolute;
+    top: 50px;
+    left: 420px;
+    height: 45px;
+    width: 150px;
+    background: #333;
+}
+
+.player-field button {
+    display: block;
+    margin: 30px 200px 15px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background: rgb(18, 170, 241);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.player-field button:hover {
+    background: rgb(104, 203, 248);
+}
