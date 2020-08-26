@@ -28,6 +28,7 @@ body {
 .container h1 {
     grid-area: h1;
 
+    align-self: center;
     text-align: center;
     font-size: 40px;
     color: rgb(18, 170, 241);
@@ -63,13 +64,24 @@ body {
     background: #333;
 }
 
+.player-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 .player-name {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: -50px;
     left: 200px;
     height: 35px;
     width: 200px;
     background: #333;
+    color: white;
+    font-size: 21px;
 }
 
 .player-guess {
@@ -88,13 +100,24 @@ body {
     background: #333;
 }
 
+.bot-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 .bot-name {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: -50px;
     left: 800px;
     height: 35px;
     width: 200px;
     background: #333;
+    color: white;
+    font-size: 21px;
 }
 
 .bot-guess {
