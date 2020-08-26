@@ -9,6 +9,7 @@
 
 body {
     height: 100%;
+    color: white;
 }
 
 .container {
@@ -55,6 +56,7 @@ body {
     position: absolute;
     top: -20px;
     font-size: 40px;
+    color: #333;
 }
 
 /* Player style */
@@ -86,9 +88,12 @@ body {
 
 .player-guess {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 50px;
     height: 45px;
-    left: 630px;
+    left: 420px;
     width: 150px;
     background: #333;
 }
@@ -122,8 +127,11 @@ body {
 
 .bot-guess {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 50px;
-    left: 420px;
+    left: 630px;
     height: 45px;
     width: 150px;
     background: #333;
@@ -143,4 +151,10 @@ body {
 
 .player-field button:hover {
     background: rgb(104, 203, 248);
+}
+
+.player-field #submit-btn {
+    position: absolute;
+    left: 300px;
+    top: 150px;
 }
